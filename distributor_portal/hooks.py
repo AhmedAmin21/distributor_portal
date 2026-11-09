@@ -20,7 +20,23 @@ app_license = "mit"
 # 		"has_permission": "distributor_portal.api.permission.has_app_permission"
 # 	}
 # ]
+permission_query_conditions = {
+    "Item": "distributor_portal.permissions.get_item_permission",
+    "Item Price": "distributor_portal.permissions.get_item_price_permission",
+    "Sales Order": "distributor_portal.permissions.get_sales_order_permission",
+    "Warehouse": "distributor_portal.permissions.get_warehouse_permission",
+    "Sales Invoice": "distributor_portal.permissions.get_sales_invoice_permission",
+}
 
+has_permission = {
+    "Item": "distributor_portal.permissions.has_item_permission",
+    "Item Price": "distributor_portal.permissions.has_item_price_permission",
+    "Warehouse": "distributor_portal.permissions.has_warehouse_permission",
+    "Sales Invoice": "distributor_portal.permissions.has_sales_invoice_permission",
+}
+
+
+#app_include_js = "/assets/distributor_portal/js/distributor_list1.js"
 # Includes in <head>
 # ------------------
 
